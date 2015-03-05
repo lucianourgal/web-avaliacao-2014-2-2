@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context antiJARLocking="true" path="/avaliacao2">
+    
+    <Resource name="jdbc/nomeJndi" auth="Container"
+          type="javax.sql.DataSource" driverClassName="net.sourceforge.jtds.jdbc.Driver"
+          url="jdbc:jtds:sqlserver://dev.ct.utfpr.edu.br;DatabaseName=cema"
+          username="aluno01" password="aluno01" maxActive="20" maxIdle="10" maxWait="-1"/>
+
+    
 </Context>

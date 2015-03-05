@@ -1,0 +1,19 @@
+<persistence version="2.0" 
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+ <persistence-unit name="default">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <non-jta-data-source>java:/comp/env/jdbc/nomeJndi</non-jta-data-source>
+    <class>if6ae.entity.inscricao</class>
+    <class>if6ae.entity.minicurso_inscricao</class>
+    <class>if6ae.entity.minicurso</class>
+ </persistence-unit>
+    <properties>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect" />
+        <property name="hibernate.format_sql" value="false"/>
+        <property name="hibernate.show_sql" value="false" />
+    </properties>
+
+</persistence-unit>
+</persistence>
